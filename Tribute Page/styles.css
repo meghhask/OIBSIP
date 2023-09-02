@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  color: #444;
+  line-height: 1.6;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #0d5565;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Dancing Script", cursive;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+#intro img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0d5565;
+  color: white;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #intro img {
+    max-width: 70%;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* Adjust styles for larger screens */
+  .container {
+    padding: 2rem;
+  }
+
+  #intro {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #intro img {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* For even larger screens */
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+  }
+
+  #intro img {
+    max-width: 60%;
+  }
+}
